@@ -564,11 +564,7 @@ ul {
 /* Subscription */
 
 .subscription-container {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   margin-left: 93px;
-  margin-bottom: 94px;
 }
 .subscription-title {
   color: var(--primary-white-color);
@@ -581,6 +577,8 @@ ul {
   margin-bottom: 20px;
 }
 .subscription-form {
+  display: flex;
+  align-items: center;
 }
 .subscription-email {
   width: 358px;
@@ -606,18 +604,22 @@ ul {
 }
 
 .subscription-button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
 
   height: 50px;
-  width: 200px;
+  min-width: 200px;
   padding: 10px 28px;
-  margin-left: 12px;
 
   border-radius: 4px;
   border: none;
-  box-shadow: 1px solid 0px, 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
@@ -627,9 +629,9 @@ ul {
   background-color: var(--accent-color);
 }
 
-/* закончить с иконкой */
 .icon-subscription {
   fill: currentColor;
+  margin-left: 10px;
 }
 
 /* Modal Window */
@@ -700,13 +702,57 @@ ul {
 .icon-close {
   fill: var(--nav-color);
 }
-
+/* Register Form */
 label {
   display: block;
 }
-
 textarea {
   resize: none;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-form-title {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+}
+.register-form-group {
+  /* display: flex;
+  flex-direction: column; */
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.label {
+}
+.form-input {
+}
+.icon-form {
+}
+.checkbox {
+}
+.checkbox-label {
+}
+.checkbox-input {
+}
+.form-link {
+}
+.form-button {
 }
 
 /* PORTFOLIO MAIN */
